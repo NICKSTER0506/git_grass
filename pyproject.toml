@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git-grass"
+version = "0.1.0"
+description = "Open-Source AI Terminal Detox & Proof-of-Nature Git Daemon"
+readme = "README.md"
+authors = [{ name = "Nikster & Open Innovation" }]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.0.0",
+    "rich>=13.0.0",
+    "pillow>=9.0.0",
+    "numpy>=1.20.0",
+    "onnxruntime>=1.15.0",
+]
+
+[project.scripts]
+git-grass = "git_grass.cli:main"
